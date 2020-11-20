@@ -3,3 +3,9 @@ export enum States {
   Inactive = "inactive",
   Pending = "paid_pending"
 }
+
+export enum PostCategory {
+  'TECHNOLOGY',
+  'LIFESTYLE',
+  'CODING',
+}

@@ -18,6 +18,9 @@ export default registerAs('typeorm', () => {
   return {
     users: {
       ...configDefault,
+    },
+    posts: {
+      ...configDefault
     }
   }
 })

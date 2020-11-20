@@ -5,11 +5,11 @@ const sgMail = require('@sendgrid/mail');
 
 export const Templates = {
   VERIFY_FORGOT_PASSWORD: {
-    id: 'd-ef4594eff68349cd9a41572791c46c36',
+    id: 'd-c686715b03c140bfaa0cd64f8ee47b0a',
     subject: { es: 'Recuperar contraseña', en: 'Recover password' }
   },
   SIGNUP_SUCCESS: {
-    id: 'd-9e35b5f2cb404bdfa118d9f19ceec2cd',
+    id: 'd-119f4b9666ab4835b29a4b62ec1135ef',
     subject: { es: 'Registro exitoso', en: 'Signup success' }
   }
 };
@@ -30,7 +30,7 @@ export class SengridService {
     return new Promise((resolve, reject) => {
       const msg = {
         to,
-        from: this.config.fromEmail || 'yeisom40@gmail.com',
+        from: this.config.fromEmail || 'andrescadena0607@gmail.com',
         templateId: template.id,
         dynamic_template_data: {
           ...substitutions,
